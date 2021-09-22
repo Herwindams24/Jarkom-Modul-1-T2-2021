@@ -72,10 +72,9 @@ b. Jawaban Pada Website
      
      Password: tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN
      ```
+     ![image](https://user-images.githubusercontent.com/57520495/134288686-873714f1-75c7-4879-b000-296388c8673b.png)
      
   4. Gunakan username dan password tersebut untuk mengakses [basic.ichimarumaru.tech](basic.ichimarumaru.tech) dan pertanyaan pada website dijawab.
-  
-  ![image](https://user-images.githubusercontent.com/57520495/134288686-873714f1-75c7-4879-b000-296388c8673b.png)
   ![image](https://user-images.githubusercontent.com/57520495/134288721-01769351-5268-4c66-a978-3f8920845424.png)
 
 
@@ -127,12 +126,13 @@ b. Jawaban Pada Website
      ```
      Mysql.query && frame contains “users”
      ```
+     ![image](https://user-images.githubusercontent.com/57520495/134288959-a8923d71-57a2-498d-a66d-8e47aa5e1d47.png)
+     
   2. Didapatkan:
      ```
      Username : akakanomi
      Password : pemisah4lautan
      ```
-     ![image](https://user-images.githubusercontent.com/57520495/134288959-a8923d71-57a2-498d-a66d-8e47aa5e1d47.png)
 
   3. Jawab pertanyaan **Sebutkan Konfigurasi Pengkabelan T568B!**
      ```
@@ -170,12 +170,6 @@ b. Jawaban Pada Website
   4. Save as ```Real.pdf```
   ![image](https://user-images.githubusercontent.com/57520495/134289132-71f04e6e-d6bc-4f43-8112-4745296e77a9.png)
   ![image](https://user-images.githubusercontent.com/57520495/134289347-1dcbce40-025c-45de-b0f7-152238a51232.png)
-
-
-  
-  
-  **Tata Cara**
-  
   
   
 ## Nomor 08
@@ -187,11 +181,7 @@ b. Jawaban Pada Website
   
   1. Lakukan display filtering ```frame contains “RETR”```
   2. Berdasarkan hasil yang didapat, tidak ada data/log yang menunjukkan pengambilan (download atau RETR dari FTP Server tsb)
-  ![image](https://user-images.githubusercontent.com/57520495/134289470-0ec3a3b7-c561-40f2-8676-029227f01ecf.png)
-
-  
-  **Tata Cara**
-  
+  ![image](https://user-images.githubusercontent.com/57520495/134289470-0ec3a3b7-c561-40f2-8676-029227f01ecf.png)  
   
 ## Nomor 09
    **Soal**
@@ -205,11 +195,7 @@ b. Jawaban Pada Website
   2. Follow TCP Stream
   3. Increase stream number jadi 10, show as Raw
   4. Save as secret.zip
-  ![image](https://user-images.githubusercontent.com/57520495/134289576-2cf8d937-80ca-4af0-9215-5b410c6fb215.png)
-
-  
-  **Tata Cara**
-  
+  ![image](https://user-images.githubusercontent.com/57520495/134289576-2cf8d937-80ca-4af0-9215-5b410c6fb215.png)  
   
 ## Nomor 10
    **Soal**
@@ -229,11 +215,6 @@ b. Jawaban Pada Website
   ![image](https://user-images.githubusercontent.com/57520495/134289862-ad3cc7db-31c2-4378-bf74-22cbf75de1d2.png)
   9. Buka file ```Wanted.pdf``` dengan password yang didapatkan tadi
   ![image](https://user-images.githubusercontent.com/57520495/134289989-d02b40dc-eb95-4040-b64d-1130c4845a31.png)
-
-  
-  **Tata Cara**
-  
-  
   
 ## Nomor 11
    **Soal**
