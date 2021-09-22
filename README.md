@@ -19,10 +19,9 @@ Kelompok T2
   **Tata Cara:**
   1. Lakukan filtering display ``http.host contains "testing.mekanis.me"``, lalu akan muncul beberapa paket. 
   2. Di mana pada salah satu paket, kita dapat melihat web server yang digunakan pada bagian Hypertext Transfer Protocol.
-  ![image](https://user-images.githubusercontent.com/57520495/134288591-1f9cbf70-dd64-4518-a92d-896894de9967.png)
+  
+     <img src="https://user-images.githubusercontent.com/57520495/134288591-1f9cbf70-dd64-4518-a92d-896894de9967.png" width="800">
 
-  
-  
   
 ## Nomor 02
   **Soal**
@@ -34,12 +33,12 @@ Kelompok T2
   Dari file 1-5.pcapng, Website yang menggunakan *Basic Authentication Method* adalah [basic.ichimarumaru.tech](basic.ichimarumaru.tech)
 
   **Tata Cara:**
+  
   1. Lakukan *display filtering* menggunakan filter ``http.authbasic``
   2. Akan ditampilkan seluruh paket yang menggunakan basic authentication method
   3. Setelah diitelaah terdapat satu website yang menggunakan metode tersebut, yaitu [basic.ichimarumaru.tech](basic.ichimarumaru.tech)
-  ![image](https://user-images.githubusercontent.com/57520495/134288647-1af8dec9-01f4-49d7-8432-833cc4b43aaa.png)
-
-  
+   
+     <img src="https://user-images.githubusercontent.com/57520495/134288647-1af8dec9-01f4-49d7-8432-833cc4b43aaa.png" width="800">
 
 ## Nomor 03
   **Soal**
@@ -48,84 +47,84 @@ Kelompok T2
 
   **Jawaban**
  
- a. Username dan Password
+  a. Username dan Password
  
-  ``` 
+     ``` 
      Username: kuncimenujulautan
      
      Password: tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN
-  ```
+     ```
 
-b. Jawaban Pada Website
+  b. Jawaban Pada Website
 
-  ```
-  Putih Hijau - Hijau - Putih Oranye - Biru - Putih Biru - Oranye - Putih Cokelat - Cokelat
-  ```
+    ```
+    Putih Hijau - Hijau - Putih Oranye - Biru - Putih Biru - Oranye - Putih Cokelat - Cokelat
+    ```
   
   **Tata Cara**
-  1. Pada file 1-5.pcapng, Lakukan display filtering menggunakan filter ``http.host == basic.ichimaru.tech`` 
-  2. Lalu pilih paket dengan info GET
-  3. Pada Hypertext Transfer Protocol terdapat Authentication  yang berisikan credential:
+  
+  1.  Pada file 1-5.pcapng, Lakukan display filtering menggunakan filter ``http.host == basic.ichimaru.tech`` 
+  2.  Lalu pilih paket dengan info GET
+  3.  Pada Hypertext Transfer Protocol terdapat Authentication  yang berisikan credential:
      
      ``` 
      Username: kuncimenujulautan
      
      Password: tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN
      ```
-     ![image](https://user-images.githubusercontent.com/57520495/134288686-873714f1-75c7-4879-b000-296388c8673b.png)
+      
+   <img src= "https://user-images.githubusercontent.com/57520495/134288686-873714f1-75c7-4879-b000-296388c8673b.png" weight="700">
      
   4. Gunakan username dan password tersebut untuk mengakses [basic.ichimarumaru.tech](basic.ichimarumaru.tech) dan pertanyaan pada website dijawab.
-  ![image](https://user-images.githubusercontent.com/57520495/134288721-01769351-5268-4c66-a978-3f8920845424.png)
-
-
-
+     
+     <img src= "https://user-images.githubusercontent.com/57520495/134288721-01769351-5268-4c66-a978-3f8920845424.png" weight="400">
 
 ## Nomor 04
    **Soal**
+   
    Temukan paket mysql yang mengandung perintah query select!
 
-  **Jawaban**
+  **Tata Cara dan Jawaban**
   
-  
-  
-  **Tata Cara**
   1. Melakukan display filtering menggunakan 
      ```
      mysql.query
      ```
   2. Klik paket nomor 3 dan pada MySQL Protocol terdapat dropdown Request Command Query di mana menunjukkan statement ``SELECT DATABASE``
+     
      ![image](https://user-images.githubusercontent.com/57520495/134288836-b3d1619b-02da-4429-aed7-c3a7fbfccd8a.png)
+     
   4. Kami juga melakukan display filtering:
      ```
      mysql.query && frame contains “select”
      ```
+     
      ![image](https://user-images.githubusercontent.com/57520495/134288862-f5d90c76-f02f-42c4-afe9-1976947fced2.png)
-
-
   
   ## Nomor 05
    **Soal**
    Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
 
-
   **Jawaban**
   
-  a. Username dan Password
+  1. Username dan Password
      ```
      Username : akakanomi
      Password : pemisah4lautan
      ```
      
-  b. Jawaban Pertanyaan
+  2. Jawaban Pertanyaan
      ```
      Putih Oranye - Oranye -Putih Hijau - Biru - Putih Biru - Hijau - Putih Cokelat - Cokelat 
      ```
      
   **Tata Cara**
+  
   1. Lakukan display filtering 
      ```
      Mysql.query && frame contains “users”
      ```
+     
      ![image](https://user-images.githubusercontent.com/57520495/134288959-a8923d71-57a2-498d-a66d-8e47aa5e1d47.png)
      
   2. Didapatkan:
@@ -138,6 +137,7 @@ b. Jawaban Pada Website
      ```
      Putih Oranye - Oranye -Putih Hijau - Biru - Putih Biru - Hijau - Putih Cokelat - Cokelat 
      ```
+     
      ![image](https://user-images.githubusercontent.com/57520495/134288978-2aa1abed-8806-4564-b6d6-40341d99b637.png)
 
   
@@ -146,41 +146,40 @@ b. Jawaban Pada Website
 
    Cari username dan password ketika melakukan login ke FTP Server!
 
-  **Jawaban**
+  **Tata Cara dan Jawaban**
   
   1. Lakukan display filtering ```ftp.request.command == “USER” || ftp.request.command == “PASS”```
   2. Didapatkan: USER: ```secretuser``` dan PASS: ```aku.pengen.pw.aja```
+  
   ![image](https://user-images.githubusercontent.com/57520495/134289004-a6d2abe2-6268-46b3-83f0-f91385721f71.png)
-
   
-  **Tata Cara**
-  
-  
-  
+    
 ## Nomor 07
    **Soal**
 
    Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
 
-  **Jawaban**
+  **Tata Cara dan Jawaban**
   
   1. Lakukan filtering ```frame contains “.pdf” && frame contains “Real.pdf”```
   2. Follow TCP Stream
   3. Show as Raw
   4. Save as ```Real.pdf```
+  
   ![image](https://user-images.githubusercontent.com/57520495/134289132-71f04e6e-d6bc-4f43-8112-4745296e77a9.png)
   ![image](https://user-images.githubusercontent.com/57520495/134289347-1dcbce40-025c-45de-b0f7-152238a51232.png)
   
   
 ## Nomor 08
-   **Soal**
+  **Soal**
 
-   Cari paket yang menunjukan pengambilan file dari FTP tersebut!
+  Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 
   **Jawaban**
   
   1. Lakukan display filtering ```frame contains “RETR”```
   2. Berdasarkan hasil yang didapat, tidak ada data/log yang menunjukkan pengambilan (download atau RETR dari FTP Server tsb)
+  
   ![image](https://user-images.githubusercontent.com/57520495/134289470-0ec3a3b7-c561-40f2-8676-029227f01ecf.png)  
   
 ## Nomor 09
@@ -195,6 +194,7 @@ b. Jawaban Pada Website
   2. Follow TCP Stream
   3. Increase stream number jadi 10, show as Raw
   4. Save as secret.zip
+  
   ![image](https://user-images.githubusercontent.com/57520495/134289576-2cf8d937-80ca-4af0-9215-5b410c6fb215.png)  
   
 ## Nomor 10
@@ -208,12 +208,17 @@ b. Jawaban Pada Website
   1. Lakukan ```frame contains “.txt”``` atau ```frame contains “.txt”```
   2. Follow TCP Stream yang history.txt
   3. Increase Stream, show as ASCII
+  
   ![image](https://user-images.githubusercontent.com/57520495/134289772-b68446fc-606b-482d-8c34-3f28801d2f2c.png)
+  
   5. Berdasar isinya, dapat terlihat bahwa password file secret.zip merupakan baris ke-(-1) (tail -1) dari file bukanapapa.txt
   6. Follow TCP Stream yang bukanapapa.txt
   7. Increase Stream, show as ASCII
+  
   ![image](https://user-images.githubusercontent.com/57520495/134289862-ad3cc7db-31c2-4378-bf74-22cbf75de1d2.png)
+  
   9. Buka file ```Wanted.pdf``` dengan password yang didapatkan tadi
+  
   ![image](https://user-images.githubusercontent.com/57520495/134289989-d02b40dc-eb95-4040-b64d-1130c4845a31.png)
   
 ## Nomor 11
@@ -221,16 +226,25 @@ b. Jawaban Pada Website
 
    Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 
-  **Jawaban**
+   **Jawaban**
   
-  1. Jawab
-  2. Jawab
-  ![image](https://user-images.githubusercontent.com/57520495/134290038-c3e82129-8866-4e43-a40c-53aa68c180e6.png)
+   1. *Capture Filtering* menggunakan ``src port 80``
+  
+   ![image](https://i.imgur.com/Yv0VchJ.png)
+  
+   ![image](https://i.imgur.com/kREbOHf.png)
+  
+   2. *Display Filtering* menggunakan ``tcp.srcport == 80 || udp.srcport == 80``
+  
+   ![image](https://user-images.githubusercontent.com/57520495/134290038-c3e82129-8866-4e43-a40c-53aa68c180e6.png)
 
   
-  **Tata Cara**
+   **Tata Cara**
   
-  
+   1. Buka wireshark dan pilih jaringan Wifi
+   2. Ketikan ``src port 80`` pada kolom filtering dan klik enter
+   3. Wireshark akan menangkap paket-paket yang berasal dari port 80
+   4. Pada soal ini, kami juga melakukan *display filtering* untuk memastikan bahwa semua paket berasal dari port 80  
   
 ## Nomor 12
    **Soal**
@@ -240,12 +254,37 @@ b. Jawaban Pada Website
   **Jawaban**
   
   1. Jawab
+     ![image](https://user-images.githubusercontent.com/57980125/134377458-55412df9-0b51-411e-b1a2-c4447b7b3d59.png)
   2. Jawab
-  ![image](https://user-images.githubusercontent.com/57520495/134290063-25ddd11e-c06e-4af7-bd07-6918f3d9056f.png)
+     ![image](https://user-images.githubusercontent.com/57520495/134290063-25ddd11e-c06e-4af7-bd07-6918f3d9056f.png)
 
   
   **Tata Cara**
+  1. Nyalakan Wireshark dan lakukan capturing packet menggunakan jaringan **Adapter for Loopback Traffic Capture** dengan capture filtering ``Port 21``
+     
+     ![image](![Wireshark_y0K6n6UwzF](https://user-images.githubusercontent.com/57980125/134377730-0a46e7b5-c600-431d-8476-58f16d49102e.png)
+     
+  2. Buka Xampp dan nyalakan FileZilla Server. Lalu klik admin. Pada admin akan muncul server address yang akan digunakan pada mesin filezilla client.
+     
+     ![image](https://user-images.githubusercontent.com/57980125/134377752-4909d67a-c6ad-408d-9ed3-e8ebb0761a2b.png)
+     
+     ![image](https://user-images.githubusercontent.com/57980125/134377916-744b7517-06e7-4b0f-8668-204d3d41a3c3.png)
+     
+  3. Pada filezilla server, klik users dan edit seperti gambar di bawah. Tetapkan username dan password yang akan digunakan. Di sini penulis menggunakan 
   
+     ```username: indowebsite dan password: 123```
+     
+     ![image](https://user-images.githubusercontent.com/57980125/134378163-753abaf3-5e8f-4a7c-954a-0778dfabe8b4.png)
+  
+  4. Buka FileZilla Client dan isikan username, password, beserta mesin.
+  
+     ![image](https://user-images.githubusercontent.com/57980125/134378188-6d5a077e-e259-4eea-a137-0623b5fc0ffa.png)
+
+  5. Cek kembali Wireshark dan akan didapatkan paket-paket yang mengandung port 21 di bawah ini
+    
+     ![image](https://user-images.githubusercontent.com/57980125/134377458-55412df9-0b51-411e-b1a2-c4447b7b3d59.png)
+  
+  6. Di sini Port 21 merupakan sebuah default port FTP
   
   
 ## Nomor 13
@@ -253,38 +292,22 @@ b. Jawaban Pada Website
 
    Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 
-  **Jawaban**
+  **Tata Cara dan Jawaban**
   
-  1. Jawab
-  2. Jawab
-  3. Jawab yang lain
-  ![image](https://user-images.githubusercontent.com/57520495/134290080-acc290b6-0a6d-4818-a8b3-f19ac3118aa8.png)
-  ![image](https://user-images.githubusercontent.com/57520495/134290142-5b0cec1f-9d22-4700-a493-513d2fd25ac0.png)
-  ![image](https://user-images.githubusercontent.com/57520495/134290119-82b387a9-cf48-4f73-8868-fbf40be7096b.png)
-
-
-  
-  **Tata Cara**
-  
-  
-  
+  Taruh di sini ya
+     
 ## Nomor 14
    **Soal**
 
    Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
 
   **Jawaban**
-  
-  1. Jawab
-  2. Jawab
-  3. Jawab
-  ![image](https://user-images.githubusercontent.com/57520495/134290168-8925cb1f-cdef-45aa-b57e-a88b0c10a54a.png)
+ 
   ![image](https://user-images.githubusercontent.com/57520495/134290181-cae37dac-88a9-4793-bf00-600a9f274ce9.png)
 
-  
   **Tata Cara**
   
-  
+  Taruh di sini ya
   
 ## Nomor 15
    **Soal**
@@ -293,18 +316,23 @@ b. Jawaban Pada Website
 
   **Jawaban**
   
-  ![image](https://user-images.githubusercontent.com/57520495/134290202-4276d17c-d8ca-47cc-bd91-b054abe43843.png)
-  ![image](https://user-images.githubusercontent.com/57520495/134290209-d5c79337-3657-4ae5-8cac-3eca9c3f384e.png)
   ![image](https://user-images.githubusercontent.com/57520495/134290217-f76b6760-f0dd-4bac-944e-50b029dd167f.png)
-
   
   **Tata Cara**
   1. Pertama-tama ketikkan ipconfig pada command prompt windows untuk mengetahui IP Address kami.
+  
+      <img src = "https://user-images.githubusercontent.com/57520495/134290202-4276d17c-d8ca-47cc-bd91-b054abe43843.png" weight = "300px">
+      
   2. Setelah mendapatkan IP tersebut, buka wireshark dan ketikan ``src 192.168.43.1`` untuk melakukan *capture filter*.
+  
+     <img src = "https://user-images.githubusercontent.com/57520495/134290209-d5c79337-3657-4ae5-8cac-3eca9c3f384e.png" weight = "300px">
+     
   3. Setelah itu jalankan wireshark dan stop capturing
      
 
-
+## Kendala
+  1.  ..
+  2.  ..
   
   
   
