@@ -307,7 +307,17 @@ Kelompok T2
 
   **Tata Cara**
   
-  Taruh di sini ya
+  1. Ping [kemenag.go.id](kemenag.go.id) pada Command Prompt
+ 
+      ![image](https://user-images.githubusercontent.com/57520495/134290168-8925cb1f-cdef-45aa-b57e-a88b0c10a54a.png)
+      
+  2. Pilih Wifi dan jalankan capturing paket
+  
+  4. Kunjungi website [kemenag.go.id](kemenag.go.id)
+  
+  6. Kembali ke wireshark dan stop capturing
+  
+  8. Lakukan display filtering http.host == kemenag.go.id
   
 ## Nomor 15
    **Soal**
