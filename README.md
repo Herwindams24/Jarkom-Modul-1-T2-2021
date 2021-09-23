@@ -359,8 +359,8 @@ Kelompok T2
      
 
 ## Kendala
-  1.  ..
-  2.  ..
+  1.  Untuk soal nomor 11 kami sedikit ragu dengan soal apakah perintahnya melakukan capture filtering atau display filtering, sehingga kami melakukan keduanya dengan meng capture sendiri dan melakukan display filtering dari file 1-5.pcap 
+  2.  Untuk soal nomor 13 juga sedikit ragu apakah perintahnya hanya menampilkan saja yang berarti hanya melakukan display filtering tanpa capture filtering. Sehingga kami melakukan keduanya dengan melakukan display filtering pada file 1-5.pcap dan meng-capture sendiri dan melakukan capture filtering.
   
   
   
