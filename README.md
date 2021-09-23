@@ -294,7 +294,24 @@ Kelompok T2
 
   **Tata Cara dan Jawaban**
   
-  Taruh di sini ya
+  1. Display Filtering
+     Filter:
+     
+
+     ```tcp.dstport == 443 || udp.dstport == 443```
+     
+
+  
+      ![image](https://user-images.githubusercontent.com/57520495/134290142-5b0cec1f-9d22-4700-a493-513d2fd25ac0.png)
+  
+  2. Capture Filtering
+     
+
+     ```dst port 443```
+     
+
+     
+      ![image](https://user-images.githubusercontent.com/57520495/134290119-82b387a9-cf48-4f73-8868-fbf40be7096b.png)
      
 ## Nomor 14
    **Soal**
@@ -317,7 +334,7 @@ Kelompok T2
   
   6. Kembali ke wireshark dan stop capturing
   
-  8. Lakukan display filtering http.host == kemenag.go.id
+  8. Lakukan display filtering ```http.host == kemenag.go.id```
   
 ## Nomor 15
    **Soal**
